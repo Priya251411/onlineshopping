@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Shopping Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1><marquee>🛒 Priya Online Shopping Store</marquee></h1>
+
+<div class="cart-icon" onclick="openCart()">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="count">0</span>
+</div>
+
+</header>
+
+
+<!-- Products -->
+
+<div class="products">
+
+
+<div class="card">
+<img src="headphones.jfif">
+<h3>Wireless Headphone</h3>
+<p>Noise Cancelling Bluetooth Headphone</p>
+<h2>₹1999</h2>
+<button onclick="addCart('Wireless Headphone',1999)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="watch.jfif">
+<h3>Smart Watch</h3>
+<p>Fitness Tracking Smart Watch</p>
+<h2>₹2499</h2>
+<button onclick="addCart('Smart Watch',2499)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="lap.jpg">
+<h3>Laptop</h3>
+<p>Intel i5 12th Gen Laptop</p>
+<h2>₹55999</h2>
+<button onclick="addCart('Laptop',55999)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="mouse.jfif">
+<h3>Gaming Mouse</h3>
+<p>RGB Gaming Mouse</p>
+<h2>₹999</h2>
+<button onclick="addCart('Gaming Mouse',999)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="speaker.jfif">
+<h3>Bluetooth Speaker</h3>
+<p>Portable Speaker</p>
+<h2>₹1499</h2>
+<button onclick="addCart('Bluetooth Speaker',1499)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="phone.jfif">
+<h3>Mobile Phone</h3>
+<p>8GB RAM 128GB Storage</p>
+<h2>₹18999</h2>
+<button onclick="addCart('Mobile Phone',18999)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="keyboard.jfif">
+<h3>Keyboard</h3>
+<p>Mechanical RGB Keyboard</p>
+<h2>₹2999</h2>
+<button onclick="addCart('Keyboard',2999)">
+Add To Cart
+</button>
+</div>
+
+
+<div class="card">
+<img src="powerbank.jfif">
+<h3>Power Bank</h3>
+<p>20000mAh Fast Charging</p>
+<h2>₹1699</h2>
+<button onclick="addCart('Power Bank',1699)">
+Add To Cart
+</button>
+</div>
+
+
+</div>
+
+
+
+<!-- Dark Background -->
+
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+
+
+
+<!-- Cart Side Panel -->
+
+<div id="cartSidebar" class="cart-sidebar">
+
+<span class="close-btn" onclick="closeCart()">
+&times;
+</span>
+
+
+<h2>Your Cart</h2>
+
+
+<div id="cartItems">
+
+</div>
+
+
+<hr>
+
+
+<h3>
+Total : ₹<span id="total">0</span>
+</h3>
+
+
+<button class="checkout">
+Checkout
+</button>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
